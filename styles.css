@@ -1,0 +1,143 @@
+
+@font-face {
+    font-family: Timer;
+    src: url(Assets/CursedTimerUlil.ttf);
+}
+
+body{
+    margin: 0;
+    font-family: "Timer" , Verdana;
+    text-align: center;
+    background: url("/Assets/images/basketball-game-concept.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 550px
+
+}
+
+.title{
+    margin: 0 auto;
+    font-size:x-large;
+    color: #EEEEEE;
+    font-family: Verdana;
+    text-shadow: 0 0 4px black;
+}
+
+#board{
+    background: linear-gradient(#08111f, #0e182c , #0f303d );
+    display: flex;
+    justify-content: space-around;
+    width: 90vw;
+    min-width: 550px;
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px 20px 40px 20px;
+    border: 5px solid #dbd6d1;
+    border-radius: 10px;
+}
+
+.score-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 40px;
+
+    margin: 15px;
+}
+
+#timer-period-container{
+    padding-top: 0;
+    width: 225px;
+}
+
+#periods-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 8px 10px;
+    border-radius: 4px;
+    margin: 20px auto;
+}
+
+.period{
+    margin: auto 10px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #ff7e1b ;
+    border-radius: 50%;
+    background: #ff7e1b;
+}
+.period-reached{
+    opacity: 100%;
+    box-shadow: 0 0 5px #ff7e1b;
+    transition-duration: 300ms;
+}
+
+.period-not-reached{
+    opacity: 25%;
+}
+
+button{
+    font-size: large;
+    color: #d1d5db;
+    background: none;
+    border: 1px solid #d1d5db;
+    border-radius: 3px;
+    padding: 7px;
+    font-family: "Timer" , Verdana;
+    text-shadow: 0 0 4px #d1d5db;
+    box-shadow: 0 0 5px #9aabd849;
+    transition-duration: 300ms;
+    margin: 5px 3px;
+}
+
+button:hover{
+    cursor: pointer;
+    text-shadow: 0 0 8px #b6c6f1;
+    box-shadow: 0 0 10px #9aabd85e;
+}
+button:active{
+    text-shadow: none;
+    box-shadow: none;
+}
+
+.control-btn{
+    width: 100%;
+    margin: 8px auto;
+}
+
+.score{
+    color: #ff7e1b;
+    text-shadow: 0 0 5px #ff7e1b;
+    padding: 20% 0;
+    width: 90%;
+    min-width: fit-content;
+    border-radius: 4px;
+    letter-spacing: 0.1cm;
+    font-size: 60px;
+}
+
+#timer{
+    font-size: xx-large;
+    width: 100%;
+    padding: 12px 10px;
+    text-wrap: nowrap ;
+}
+
+.hidden{
+    opacity: 50%;
+    text-shadow: none;
+    box-shadow: none;
+}
+
+
+.hidden:hover{
+    cursor:default;
+    text-shadow: none;
+    box-shadow: none;
+}
+
+.dark-bg{
+    background: #030303;
+}
+

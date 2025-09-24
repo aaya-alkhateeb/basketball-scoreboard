@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Basketball Scoreboard</title>
+
+    </head>
+
+    <body>
+
+
+        <div id="board">
+            <div class="score-container">
+                <h1 class="title">Home</h1>
+                <h1 class="score dark-bg" id="home-score">0</h1>
+                <div>
+                    <button class="points-btns" onclick="addPoints(1,'home')">+1</button>
+                    <button class="points-btns" onclick="addPoints(2,'home')">+2</button>
+                    <button class="points-btns" onclick="addPoints(3,'home')">+3</button>
+                </div>
+            </div>
+            <div id="timer-period-container" class="score-container">
+                <h1 id="timer" class="score dark-bg">00 : 00</h1>
+                <h1 class="title">Period</h1>
+                <div id="periods-container" class="dark-bg">
+                    <span class="period period-reached" id="period-1"></span>
+                    <span class="period period-not-reached" id="period-2"></span>
+                    <span class="period period-not-reached" id="period-3"></span>
+                    <span class="period period-not-reached" id="period-4"></span>
+                </div>
+                <button class="control-btn hidden" id="start-period-btn" onclick="startPeriod()">Start Period</button>
+                <button class="control-btn" id="start-game-btn" onclick="startNewGame()">New Game</button>
+                
+            </div>
+            <div class="score-container">
+                <h1 class="title">Guest</h1>
+                <h1 class="score dark-bg" id="guest-score">0</h1>
+                <div>
+                    <button class="points-btns" onclick="addPoints(1,'guest')">+1</button>
+                    <button class="points-btns" onclick="addPoints(2,'guest')">+2</button>
+                    <button class="points-btns" onclick="addPoints(3,'guest')">+3</button>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
